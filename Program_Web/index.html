@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatsonRosinell0802!!!</title> <!--Trocar o titlo pelo titlo que lhes convem--> 
+    <link rel="stylesheet" href="style.css"> <!-- colocar as o link da folha des estilo -->
+</head>
+<body>
+    <div class="container" id="Wave-effect">
+
+        <!-- Lado esquerdo com o formulário -->
+        <div class="left-side"> 
+            <form id="studentForm"> <!--Varivel a ser assumida na folah de estilo-->
+                <div class="logo-container">
+                    <img src="imag/logotipo.png" alt="Logotipo" class="logo">
+                </div>
+                <h2>Student IMETRO</h2> <!-- reprsente as ordem as titulos H2 Como sendo o maior--> 
+               
+                <div class="form-group">
+                    
+                    <label for="name">Nome do Estudante</label>
+                    <input type="text" id="name" placeholder="Nome do estudante">
+                </div>
+                <div class="form-group">
+                    <label for="matricula">Número de Matrícula</label>
+                    <input type="text" id="matricula" placeholder="Número de matrícula">
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="assignGrades()" id="atribuirButton">Atribuir</button>
+                    <button type="button" onclick="clearForm()">Limpar</button>
+                    <button type="button" onclick="saveGrades()">Guardar</button>
+                    <button type="button" onclick="viewGrades()">Consultar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="right-side">
+            <img src="imag/fotoIme.jpeg" alt="Imagem Animada" class="img-responsive">
+            <script src="script.js"></script>
+            
+    </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="popupResultado" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="fecharPopup()">&times;</span>
+        <h2>Resultado</h2>
+        <div id="resultadoNotas"></div>
+
+    </div>
+</div>
+
+<footer>
+<!--Podem trcocar o titulo da assinatura de acordo o vosso gost-->
+<a href="informacao.html" target="_blank"> <center2><p>&copy; LCC3M ANGOLA 2024</p></center2>  </a>
+
+<p id="time-display">Hora: --:-- </p>
+</footer>
+
+
+
+
+
+</body>    
+</html>
