@@ -48,10 +48,12 @@ footer {
     padding: 10px;
     background-color: #222;
     color: white;
+    
 }
 
 footer a {
     color: #fff;
+    text-decoration: none;
     
 }
 

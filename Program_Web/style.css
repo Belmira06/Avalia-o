@@ -5,12 +5,22 @@
     box-sizing: border-box;
 }
 
+body, html {
+     height: 100%; 
+     font-family: Arial, sans-serif;
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between; 
+      background-color: #f0f0f0; 
+    }
+
 /* Container principal */
-.container {
-    display: flex;
-    flex-direction: row;
-    min-height: calc(100vh - 80px); /* Ajusta a altura para considerar o rodapé */
-}
+.container { 
+    display: flex; 
+    justify-content: space-between; 
+    flex: 1; 
+    padding: 20px; 
+    margin-bottom: 20px; /* Adiciona espaçamento no fundo */ }
 
 /* Estilização para o container e logotipo */
 .logo-container {
@@ -143,10 +153,12 @@ footer {
     padding: 10px;
     background-color: #222;
     color: white;
+    margin-top: auto;
 }
 
 footer a {
     color: #fff;
+    text-decoration: none;
     
 }
 
